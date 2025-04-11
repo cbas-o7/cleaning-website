@@ -1,5 +1,7 @@
 "use client"
 
+import keidyLogo from '/keidy-productos.png';
+import familiaImage from '/familia.jpg';
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Facebook, MapPin, ChevronUp, Menu, X, Phone, Mail, Clock } from "lucide-react"
@@ -288,7 +290,7 @@ export default function App() {
               <div className="relative">
                 {/* <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#9DCFEB] rounded-lg -z-10"></div> */}
                 <img
-                  src="/src/assets/familia.jpg?height=400&width=600"
+                  src={familiaImage}
                   alt="Nuestra Tienda"
                   className="rounded-lg shadow-lg w-full h-auto object-cover"
                 />
@@ -519,7 +521,7 @@ export default function App() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <div className="relative h-10 w-10">
-                  <img src="/public/keidy-productos.png?height=40&width=40" alt="Logo Keidy" className="object-contain" />
+                  <img src={keidyLogo} alt="Logo Keidy" className="object-contain" />
                 </div>
                 <span className="text-xl font-bold">Productos de Limpieza "Keidy"</span>
               </div>
